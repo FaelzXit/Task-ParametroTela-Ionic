@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="Começo">
+
+  <ion-item>
+
+    <ion-input label="Valor Diaria" labelPlacement="floating"
+   [(ngModel)]="dias" fill="solid" type="number" ></ion-input>
+
+  </ion-item>
+
+</div>
+
+<div class="meio">
+
+  <ion-item>
+
+<p>Dias De hospedagem</p>
+
+   <ion-range aria-label="Custom range"
+   [min]="1"
+   [max]="30"
+   [pin]="true"
+   [ticks]="true"
+   [snaps]="true"
+   (ionChange)="onIonChange ($event)">
+  </ion-range>
+
+  </ion-item>
+
+</div>
+
+<div class="fim">
+
+  <ion-button expand="block" (click)="abrirTela()">Ver Valor</ion-button>
+
+</div>
+
+</ion-content>

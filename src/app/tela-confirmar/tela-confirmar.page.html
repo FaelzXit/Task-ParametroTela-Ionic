@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tela-confirmar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-label><p>Valor da sua diária é de R${{dias}}</p></ion-label><br>
+  <ion-label><p>O tempo que voce irá ficar é de {{tempo}} dias</p></ion-label><br>
+  <ion-label><p>O valor total da sua reserva é de {{res}} reais </p></ion-label><br>
+
+  <ion-button (click)="VoltarParaPaginaH()" expand="block" >Voltar</ion-button>
+  <ion-button (click)="ConcluirHospedagem()" expand="block">Concluir Hospedagem</ion-button>
+
+</ion-content>
